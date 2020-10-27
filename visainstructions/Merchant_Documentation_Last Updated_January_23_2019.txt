@@ -1,0 +1,1 @@
+Mobile SDK documenation is available inside the respective SDK.
