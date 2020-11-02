@@ -27,10 +27,11 @@
             });
 
             V.on("payment.success", function(payment){
-                alert(JSON.stringify(payment));
+                //alert(JSON.stringify(payment));
                 console.log("Success!");
                 console.log(JSON.stringify(payment));
-                });
+                sendEncryptedData(payment);
+            });
             V.on("payment.cancel", function(payment){
                 alert(JSON.stringify(payment));
                 console.log("Cancel!");
@@ -77,7 +78,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Julia Lieberman, Lindsey Pesquiera, Brandon Yup</p>
+                <p class="masthead-subheading font-weight-light mb-0">Julia Lieberman, Lindsey Pesqueira, Brandon Yup</p>
                 <img alt="Visa Checkout" class="v-button" role="button"
                 src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
             </div>
@@ -233,6 +234,8 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/myscripts.js"></script>
+
         <script type="text/javascript" src="https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js">
             </script>
     </body>
