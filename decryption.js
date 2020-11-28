@@ -1,4 +1,3 @@
-
 const crypto = require('crypto');
 // key = encryption shared secret
 // wrappedKey = req.body.encKey
@@ -10,13 +9,11 @@ module.exports = {
         return decryptedMsg.toString('utf8');
 } }
 
-
+// this should decrypt the data returned from the Visa Checkout API
 function decrypt(encrypted,key){
-    let encryptedBuffer = new Buffer(encrypted,'base64'); //base-64 decode encrypted 'dynamic' key
-    // TODO: Check that data(encryptedBuffer) is at least bigger
-    // than HMAC + IV length , i.e. 48 bytes
-    let hmac = new Buffer(32);
-    let iv = new Buffer(16);
+    let encryptedBuffer = new Buffer.from(encrypted,'base64'); //base-64 decode encrypted 'dynamic' key
+    let hmac = new Buffer.alloc(32);
+    let iv = new Buffer.alloc(16);
     encryptedBuffer.copy(hmac,0,0,32); //grab first 32 bytes, this is the HMAC
     encryptedBuffer.copy(iv,0,32,48);  //this is used as the initialization vector for the decryption algorithm
     let data = Buffer.from(encryptedBuffer).slice(48); //data = first 48 bytes
@@ -26,14 +23,14 @@ function decrypt(encrypted,key){
     (Buffer.concat([iv,data])).digest();
     if(!hmac.equals(hash))
     {
-        // TODO: Handle HMAC validation failure
+        // Handle HMAC validation failure
         console.error("HMAC does not equal hash, decryption.js line 24");
         return ''; 
     }
     let decipher = crypto.createDecipheriv('aes-256-cbc',
     crypto.createHash('sha256').update(key).digest(), iv);
     let decryptedData = Buffer.concat([decipher.update(data), decipher.final()]);
-    console.log("decrypted data i think it worked WOOHOOOOOOO");
+    console.log("decrypted data");
     console.log(decryptedData);
     return decryptedData;
 }

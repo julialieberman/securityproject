@@ -1,13 +1,14 @@
 const express = require('express');
 // my scripts
-//connect to iothub
 const decryption = require('./decryption.js');
 var app = express();
+app.use(express.json());
+
 const server= require('http').createServer(app);
 app.use(express.static('./'))
 
 const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
