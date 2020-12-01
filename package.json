@@ -31,7 +31,9 @@
     "dependencies": {
         "bootstrap": "4.5.0",
         "express": "^4.17.1",
-        "jquery": "3.5.1"
+        "https": "^1.0.0",
+        "jquery": "3.5.1",
+        "request": "^2.88.2"
     },
     "devDependencies": {
         "Buffer": "0.0.0",
