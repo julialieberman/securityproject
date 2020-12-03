@@ -18,12 +18,12 @@ function decrypt(encrypted,key){
     encryptedBuffer.copy(iv,0,32,48);  //this is used as the initialization vector for the decryption algorithm
     let data = Buffer.from(encryptedBuffer).slice(48); //data = first 48 bytes
 
-    // now we will decrypt remaining data using AES-256-CBC, the IV from above and the hash of the shared secret
+    // now decrypt remaining data using AES-256-CBC, the IV from above and the hash of the shared secret
     var hash = crypto.createHmac('sha256', key).update(Buffer.concat([iv,data])).digest();
     if(!hmac.equals(hash))
     {
         // Handle HMAC validation failure
-        console.error("HMAC does not equal hash, decryption.js line 24");
+        console.error("HMAC does not equal hash, integrity check failed");
         return ''; 
     }
     let decipher = crypto.createDecipheriv('aes-256-cbc', crypto.createHash('sha256').update(key).digest(), iv);

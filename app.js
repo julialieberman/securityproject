@@ -21,35 +21,29 @@ const apiSharedSecret="n8+6AvGu/i2qo86FQvZ4TLgsS56jqOSGzgOa@Eul";
 var queryParams = 'apikey='+apiKey;
 var fullUnhashedString=queryParams+'&encryptionKey='+encryptionAPIKey;
 var postBody= '';
-// render the html pages. the '/<name>' is what the url extension will look like in the browser
+
 app.get('/', function (req, res) {
     res.render('index.html')
 })
 
-app.post('/encrypteddata', function(req, res){
-    console.log("trying to decrypt data!");
-    console.log(req.body);
-    //encrypted key to be used to decrypt encPaymentData. Used shared secret to decrypt this key
-    var encKey=req.body.encKey;
-    //encrypted consumer and payment data. decrypt by unwrapping encKey, then using that value to decrypt this
-    var encPayment=req.body.encPaymentData;
-    console.log(encKey);
-    console.log(encPayment);
-    //decryption.decryptPayload(sharedSecret, encKey, encPayment);
+function decrypt(req, res, sharedSecret, encKey, encPayment)
+{
+    decryption.decryptPayload(sharedSecret, encKey, encPayment);
+    res.send("Successfully sent encrypted data to server");
+}
 
-
-
-    console.log("Trying out a new thing now");
+function getAPIPaymentData(req, res)
+{
     var timestamp = Math.floor(Date.now()/1000);
     var resourcePath="payment/data/"+req.body.callid;
     var preHashString = timestamp + resourcePath + fullUnhashedString+postBody;
-    console.log("prehash string is: ");
-    console.log(preHashString);
+    // console.log("prehash string is: ");
+    // console.log(preHashString);
     var hashString = crypto.createHmac('sha256', sharedSecret).update(preHashString).digest('hex');
 
 	var xPayToken = 'xv2:'+timestamp + ':' + hashString;
-    console.log(hashString);
-	console.log(xPayToken);
+    // console.log(hashString);
+	// console.log(xPayToken);
     let callId=req.body.callid;
     var options = {
         uri: 'https://sandbox.secure.checkout.visa.com/wallet-services-web/payment/data/'+callId+hashString,
@@ -73,9 +67,18 @@ app.post('/encrypteddata', function(req, res){
             console.log(`Status: ${res.statusCode}`);
             console.log(body);
         });
-        res.send('Hello World');
-
-   // res.send("Successfully sent encrypted data to server");
+        res.send('Called API');
+}
+app.post('/encrypteddata', function(req, res){
+    console.log(req.body);
+    //encrypted key to be used to decrypt encPaymentData. Used shared secret to decrypt this key
+    var encKey=req.body.encKey;
+    //encrypted consumer and payment data. decrypt by unwrapping encKey, then using that value to decrypt this
+    var encPayment=req.body.encPaymentData;
+    // console.log(encKey);
+    // console.log(encPayment);
+    //decrypt(req, res, sharedSecret, encKey, encPayment);
+    getAPIPaymentData(req, res);
 })
 
 /** on page error */

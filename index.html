@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/mystyles.css" rel="stylesheet" />
+
         <script type="text/javascript">
         function onVisaCheckoutReady(){
             V.init( {
@@ -57,9 +59,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">People</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">eCommerce</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Explanation</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#securitydimensions">Security Dimensions</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#securitytechniques">Security Techniques</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Implementation">Implementation</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">References</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,91 +87,182 @@
                 src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
             </div>
         </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section security-dimensions" id="securitydimensions">
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- security techniques Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Security Dimensions</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
-                        </div>
-                    </div>
+                <div>
+                    <p>
+                        When it comes to securing an eCommerce platform, there are five different dimensions of security that need to be ensured: privacy, authentication, integrity, non-repudiation, and availability [14].
+                    </p>
+                    <h4>Privacy</h4>
+                    <p>
+                        Privacy is a prominent issue as ever-changing technology is being developed. Privacy is the ability to control secondary or additional access beyond the specified use of information from the consumer, such as unauthorized users or third parties [14]. The use of personal data brings up several concerns for intellectual property reselling, web activity correctness, integrity of the server machine, buyer’ stricking passwords (obtaining information from buyer to get access to other accounts the buyer may have), packet sniffing or snooping the victim’s computer [15]. Luckily, there are many preventions that both the consumer and eCommerce provider can take to ensure customer privacy.  
+                        Since the regulations and standards of the consumer’s privacy are limited, the burden often falls to the consumer. In a perfect world the consumer would use a complicated and unique password, check authenticity, verify the URL, and avoid disclosing non-pertinent information. However, to protect the consumers, eCommerce provider should establish a documented data retention policy and fair data collection, in which the provider must explain the data being collected and the purpose for data collection [15]. 
+                        As mentioned previously, the laws or regulations concerned with protecting customers’ privacy from eCommerce sites are vastly limited. However, there are some newer laws such as the California Consumer Privacy Act of 2018, in which California now requires websites to prompt the user to accept the ‘cookies’ they are collecting, to confirm the user’s consent [7]. Companies release their privacy policies to provide their customers with greater comfort and knowledge of how their personal information is being used. To provide privacy on our eCommerce site, we implemented the use of a Secure Sockets Layer (SSL), in which we will define and discuss later [19]. 
+                    </p>
+                    <h4>Authentication</h4>
+                    <p>
+                        Authentication is much more straightforward than privacy because we can use cryptographic methods to verify identity. There are three techniques to determine a consumer’s authenticity on an eCommerce platform: something they know, something they have, or something they are [13]. eCommerce sites can authenticate users by asking them to provide data that satisfies one of three conditions. The site can authenticate the user through something they know, like a username and password. Another technique is to authenticate with something the user has, like asking for a CVV for a credit card. Lastly, the site can authenticate a user with something they are, such as facial recognition on an Apple iPhone [dark]. Many eCommerce sites will use CAPTCHA or multi-factor authentication. 
+                        When using an eCommerce platform, it is necessary to verify both identities of the parties that are communicating as a form of access control. In eCommerce there are several different areas in which authenticity needs to be checked so that the data and transactions being transferred are valid. Authentication can be maintained through symmetric or asymmetric cryptographic schemes [14]. This can be accomplished through transport layer authentication (HTTP over SSL), token authentication through WS-Security specifications using Security Assertion Markup Language (SAML) assertions, or the Simple Object Access Protocol (SOAP) authentication header [19].  
+                    </p>
+                    <h4>Integrity</h4>
+                    <p>
+                        Integrity of a website is the trustworthiness of the information and source. A website has integrity if that information has not been altered in any way by an adversary. This is extremely important in eCommerce! For example, funds or top-secret information could be delivered to the wrong recipient if altered [14]. Digital signatures or message authentication codes are the easiest ways to guarantee integrity [19].  
+                        A hashing algorithm assures the integrity of a message because it proves that a message has not been altered. This can be done by the source sending a message, as well as a hash of the shared private key. Then the receiver can compute the hash of the shared private key and compare it to hash that they received. Since hashes have the properties of being one-way and collision resistant, it would be nearly impossible for an adversary to replicate the hash to steal the identity of the sender [6]. 
+                        Integrity can be ensured on a website with SSL and HMACs. When everything is properly encrypted with an SSL certificate from a trusted Certificate Authority (CA), the integrity will be maintained. There are no ways to replicate the SSL certificate of another server without the private key. 
+                    </p>
+                    <h4>Non-Repudiation</h4>
+                    <p>
+                        Non-repudiation is the idea that the owner of an existing signature cannot deny having signed data with that signature [14]. In many cases, digital signatures assure non-repudiation because a part cannot deny the authenticity of their signature. This check also guarantees accountability.  
+                        The whole idea of non-repudiation is using private keys that no one is supposed to have unless an adversary somehow was able to capture it. In eCommerce transactions this is very important in determining whether to reject or accept a transaction [14].  
+                    </p>
+                    <h4>Availability</h4>
+                    <p>
+                        Availability is the concept that authorized users can access systems, networks, and data, in order to complete their agenda. The classic attack on availability is a Denial-of-Service attack (DoS), in which authorized users can no longer access the website. This can be a result of an attacker overwhelming the server so it cannot handle more connections, interfering with an existing connection, or messing with the served content.  
+                        These security principles have similarities and overlap in many ways, thus certain security methods can be used to ensure several principles at once.  
+                    </p>
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section security-dimensions" id="currentstandards">
             <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- security techniques Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Current Standards and Compliances</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div>
+                    <h4>Payment Card Industry Data Security Standard (PCI-DSS)</h4>
+                    <p>
+                        The PCI-DSS is an information security standard that protects organizations from security breaches and credit card theft, as well as educates vendors on implementing ecommerce security measures. The major credit card brands, such as Visa and Mastercard, enforce the regulations by including them in contracts with merchants and vendors. However, the Payment Card Industry Security Standards Council was formed from these major credit card brands to create the regulations. The PCI-DCI has several different standards for areas of ecommerce, like data collection, in order to implement security criteria for things such as strong access control or Point-to-point encryption [16]. PCI-DSS also stores a list of different payment applications that have been tested and approved by the Council, so that merchants and vendors can trust these applications.  
+                    </p>
+                    <h4>International Organization for Standardization (ISO) </h4>
+                    <p>
+                        The International Organization for Standardization (ISO) scopes far beyond standardization for ecommerce. The ISO was created in 1947 as an organization to include representatives from different nation’s standardization organizations to provide worldwide proprietary, industrial and commercial standards [iso]. In 2013, a new standard for ecommerce was introduced to provide data security, ISO/IEC 27001:2013. This standard allows businesses to earn a certification confirming that the business has high quality management systems, data security, risk-aversion strategies, and standardized business practices [17]. 
+                    </p>
+                    <h4>General Data Protection Regulation (GDPR) </h4>
+                    <p>
+                        In 2018, the General Data Protection Regulation was implemented, which is the European Union’s data protection law. Businesses will be fined heavily if they do not comply with these regulations that give consumers the right to data protection, including data security, privacy, and processing. This puts the responsibility of data protection on businesses to ensure each consumer’s rights are protected. This regulation has led to many businesses appointing a Data Protection Officer to be the liaison between the law and the company, stressing the importance of data protection. This regulation does not just pertain to the countries in the European Union (EU), this regulation is to protect citizens of the European Union. Thus, if a business is catering to or monitoring EU citizens, the business must be GDPR compliant [21]. 
+                    </p>
+                    <h4>California Consumer Privacy Act (CCPA) </h4>
+                    <p>
+                        California Consumer Privacy Act (CCPA) was established in 2018, that ensures that consumers have the autonomy to control the data that businesses are able to collect [7]. This law is very similar to the GDPR, as it helps promote data protection of the consumer [21]. This is one of the first laws in the United States that defines the right of privacy to the consumers. On many websites, there is now a pop-up that appears explaining that cookies are being used and that you must accept the usage to continue and use the website. Many businesses have initiated a change to their whole company’s privacy concerns as they believe that similar laws will follow in other states [7]. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Security Techniques Section-->
+        <section class="page-section security-techniques" id="securitytechniques">
+            <div class="container">
+                <!-- security techniques Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Security Techniques</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div>
+                    <h3>Security Techniques</h5>
+                    <h4>Secure Sockets Layer (SSL)</h4>
+                    <p>
+                        SSL is what allows websites to go from HTTP to HTTPS. That extra ‘S’ means there is an SSL certificate on the website’s origin server. It is sometimes referred to as Transport Layer Security (TLS), because it is a transport-layer protocol that encrypts traffic over the internet and helps identify servers. It means that any data transferred between the web server and the browser is encrypted and confidential. SSL prevents attacks like domain spoofing. Any website that contains confidential information should have SSL, especially eCommerce websites.  
+                        You get an SSL for your domain from a Certificate Authority (CA). The CA will digitally sign the certificate with their own private key. You can create a self-signed certificate if you do not want to pay a CA for one, by creating your own public-private key pairing, but these are not always recognized as secure [22]. Cloudflare is a company that provides free SSL certificates. 
+                    </p>
+                    <h4>HMAC SHA-256</h4>
+                    <p>
+                        Key Hash Message Authentication Code (HMAC) is based on Message Authentication Code(MAC), a method to send a message using a shared key in which the message and the shared key can be verified by the receiver. However, MAC is vulnerable to attacks, such as brute force, because the attacker will be able to read or modify the message if they can determine the key. HMAC can be obtained by running a cryptographic hash function. In our implementation, we ran SHA-256 on our data and used a shared secret key to generate the hashes. When using HMAC, during a file transfer, both the file and the shared secret are hashed, so the receiver can verify both the authenticity of the sender and the integrity of the data. The hashed file ensures integrity, while the hashed shared secret ensures authenticity [5]. HMAC is similar to digital signatures, as they both ensure integrity and authenticity. However, HMAC uses symmetric keys whereas digital signatures use asymmetric keys [14]. Nonetheless, digital signatures are used in addition to HMACs to secure a website. 
+                        In secure file transfer protocols, such as HTTPS, HMAC can ensure data integrity and message authentication. HMAC is considered the best mechanism for using cryptographic hash functions and is promoted as such by the Federal Information Processing Standards. Encryption and digital signatures ensure confidentiality, integrity, and non-repudiation (can verify signature using the sender’s public key) [5]. 
+                    </p>
+                    <h5>AES 256 CBC</h5>
+                    <p>
+                        AES was invented in 1976 and adopted by the federal government and is the industry standard for encryption and data security. It comes in 128-, 192-, and 256-bit implementations but 128 bit remains safe, is has no known flaws, it’s computational load is low, and it would likely take billions of years to brute force an AES key. CBC is one of the more common modes, and is used on fixed length bit groups, called blocks. This also requires the use of an initialization vector (IV) for each operation done to a given block. The IV is similar to a salt, in that it is unique in each instance and thus the two separate encryptions on the same data would yield different results [3].  
+                    </p>
+                    <img src="assets/cbcflow.png"> 
+                </div>
+            </div>
+        </section>
+        <!-- Implementation Section-->
+        <section class="page-section bg-primary text-white mb-0" id="Implementation">
+            <div class="container">
+                <!-- Implementation Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Implementation</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
+                <!-- Implementation Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Here we will have research information</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">Here we will list our resources</p></div>
+                    <div class="m-auto">
+                        <p class="lead">
+                        We decided to implement Visa Checkout in a basic website using GitHub Pages in order to get hands on practice with eCommerce security principles and gain experience with project collaboration in web development. Visa Checkout is described as a simple 3-step process: </p>
+                        <ul>
+                           <li> Integrate the Visa Checkout into your frontend  </li>
+                           <li> Obtain and decrypt the payload after user submits a payment </li>
+                           <li> Update Visa Checkout once the order is completed  </li>
+                        </ul> 
+<p>
+Since we were building this for educational purposes, we used the free sandbox environment, meaning this would not be extensible for a real payment processing solution. Documentation indicates the sandbox environment allows for a full simulation, and we used this to demonstrate the capabilities and security strategies used in online checkout [19]. 
+</p>
+
+<h5>Step I</h5>
+<p>
+We set up a basic website hosted on GitHub pages, creating our server in Node.js. Following the Visa Checkout Merchant Documentation [19], we created a Visa Developer account and created a sandbox project. We acquired API and encryption keys as well as shared secrets for symmetric encryption.  
+Various node package modules were used to make the website functional, most notably crypto, which provides a set of functions for cryptographic encryption. After setting up the website, we integrated the code for the Visa Checkout button which, when clicked, will open a lightbox where the user can login to their Visa account, add and select credit cards, and make a payment. The code was provided by Visa Checkout Getting Started [19], which we completed with our various keys and shared secrets. We tested the button functionality using dummy credit card values provided by Visa. If the payment is successful, the request finishes, triggering a payment.success event which returns an encrypted payload and a temporary call ID to be used to access the API. We were successful in testing this in both Safari and Chrome. 
+</p>
+<h5>Step II</h5>
+<p>
+After the user finishes their payment journey, the backend needs to obtain and decrypt the payload. There are two ways to do this. If the credit card type returns a token upon the payment.success event, the payload is already present, and it just needs to be decrypted. Most cards however, just return a call ID which will then be used to access the Get Payment Data API to obtain the encrypted payload. We attempted both methods. 
+Note that all the Visa Checkout APIs require either two-way SSL or x-pay-token authentication.  
+For interacting with the Get Payment Data API, an x-pay-token is required. This is an API key-shared secret authentication. The token is placed in the header of the API request and will be used to identify and authenticate the client sending the request. The encryption key is used to encrypt and decrypt a payload as well as in the creation of the x-pay-token.  
+</p>
+<h6>Step II: Method I.  </h6>
+<p>
+We adapted the sample decryption code provided by Visa [19]. Some of their module methods have been deprecated but were easy to update (i.e., creation of buffers). The decryption required first base-64-decoding the encrypted key, and then parsing the result for the HMAC and Initialization Vector (IV) for the decryption algorithm. Then, the remaining data would be decrypted using AES-256-CBC, the IV, and the hashed shared secret. To do this, we first created our own HMAC using the shared key, updating with the IV and data (the message), and doing a default digest. If the resulting value matched the HMAC from the response payload, then the HMAC would be successfully validated. At this point, we must create a decipher object based on the algorithm key, and IV, and finally decrypt the data.  
+These steps must be done two separate times to unwrap various keys and secrets in order to fully decrypt the customer payment data [19]. The recursive decryption provides an extra layer of protection for the customer’s sensitive data and does not drastically increase the computational load. Unfortunately, the provided decryption algorithm yielded uninterpretable data. For example, this was the decrypted data after undergoing the first round of decryption:  
+ 
+Buffer(32) [166, 98, 34, 246, 34, 101, 38, 131, 107, 98, 234, 118, 61, 157, 234, 22, 133, 120, 122, 148, 200, 125, 181, 2, 23, 210, 226, 95, 80, 48, 252, 209]  
+ 
+The expected result is a JSON object containing the customer payment data. We reached out to the Visa Developer Center to gain clarity on how to proceed and were informed that we cannot interpret the response without paying for a partner service. This indicates that the sandbox project cannot be fully implemented without working with a partner service, which was not made clear by the Visa Checkout documentation.  
+            We would not be successful in continuing this implementation without paying for an eCommerce partner, so we opted to try method two instead. 
+        </p>
+
+        <h6>Step II: Method II.  
+        </h6>
+       <p> In order to call the Get Payment Data API, we needed to encrypt and send the shared secret in the request header. We implemented the Node.js code to calculate the hash and create an ‘x-pay-token' header for the API calls [1]. This is a sample header: 
+ 
+GET /payment/data/{callId}?apiKey=KSKDFJOP934ALSFDJP34 HTTP/1.0 
+Host: sandbox.api.visa.com 
+Accept: application/json 
+X-PAY-TOKEN: xv2:1455716783:f5d15ed23f825ac69cd42e6fa187a175ecf7e9566ce4f21e11bad49bed4cc363 
+ 
+Generating an x-pay-token requires a few simple but easily mistakable steps: 
+1.    Create the plaintext message containing a current timestamp, the resource path, the query string containing the API and encryption keys, and the request body. The resource path needs to include the callID that was returned on the payment.success event 
+2.    Create an HMAC using SHA256 and the shared secret, updating with the plaintext message, and then performing a hex digest.  
+3.    Form the x-pay-token by concatenating ‘xv2:’ + timestamp + ‘:’ + HMAC 
+  
+We were able to verify that our hashing algorithm was functional using a Visa sample, however the API itself is unresponsive. Not only did our requests return invalid errors, the test request on their website also returns a 404 not found error [1]. We have notified the Visa Developer Center. 
+</p>
+<h5>Conclusion</h5>  
+<p>Given the failure of both methods for obtaining and decryption the customer payment data, we were blocked and thus were unable to continue forwards with our implementation.  
+We struggled to use their service the entire time. We were forced to reset our login password multiple times, could only login to the Visa Developer Center from a private browser session, and we were unable to access the website randomly due to their server going down, among many other issues. Nonetheless, we learned Implementation the process of implementing secure eCommerce websites and the various steps involved. We saw firsthand how the hashing algorithms are changed by tiny string modifications (the avalanche effect) and gained appreciation for both symmetric and asymmetric encryption.  
+</p>
+<h5>Future steps  
+</h5>
+<p>Going forwards, before diving into one solution we would do more research on the various existing solutions, looking at their reviews and rankings. Visa Checkout was not the best option. Stripe, Shopify, and WooCommerce are three other options to consider. Shopify provides a full eCommerce platform and utilizes Stripe services, whereas Stripe provides a payment solution that you can build on top of or integrate into your own website. Visa Checkout is unstable and unsupported, and we do not recommend it as an eCommerce solution. 
+                    </p></div>
                 </div>
             </div>
         </section>
@@ -176,8 +270,34 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">References</h2>
                 <!-- Icon Divider-->
+                <p style="white-space: pre-line;">
+                    References 
+[1]     “API Key – Shared Secret (X-Pay-Token).” Visa Developer Center, Visa,                          . developer.visa.com/pages/working-with-visa-apis/x-pay-token. 
+[2]     “A study on DDoS Attacks, Danger and its Prevention”, https://www.researchgate.net/publication/335757374_A_STUDY_ON_DDOS_ATTACKS_DANGER_AND_ITS_PREVENTION. [Accessed: 18- Nov- 2020]. 
+[3]     Bendovschi, A., 2020. Cyber-Attacks - Trends, Patterns And Security Countermeasures. [ebook] Bucharest: Bucharest Academy of Economics. Available at: <https://www.researchgate.net/publication/283967866_Cyber-Attacks_-_Trends_Patterns_and_Security_Countermeasures> [Accessed 18 November 2020]. 
+[4]     “Block cipher mode of operation", En.wikipedia.org, 2020. [Online]. Available at: https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation. [Accessed: 20 Nov 2020]. 
+[5]     Boppudi, K., 2011. Efficient HMAC Based Message Authentication System for Mobile Environment.  [ebook] Global Journals Inc. (USA). Available at:<https://core.ac.uk/download/pdf/231152465.pdf> [Accessed 16 November 2020] 
+[6]     Brooks, R., “The CIA Triangle and Its Real-World Application,” Netwrix Blog Insights for Cybersecurity and IT Pros The CIA Triangle and Its RealWorld Application Comments, Mar-2019. [Online]. Available: https://blog.netwrix.com/2019/03/26/the-cia-triad-and-its-real-world-application/. [Accessed: 28-Nov-2020]. 
+[7]     “California Consumer Privacy Act (CCPA),” State of California - Department of Justice - Office of the Attorney General, 20-Jul-2020. [Online]. Available: https://oag.ca.gov/privacy/ccpa. [Accessed: 26-Nov-2020]. 
+[8]     Chakraborty, S., 2020. A Study On Ddos Attacks, Danger And Its Prevention. [PDF] Available at: <https://www.researchgate.net/publication/335757374_A_STUDY_ON_DDOS_ATTACKS_DANGER_AND_ITS_PREVENTION> [Accessed 18 November 2020]. 
+[9]     E-commerce Nation, “What are the best e-commerce security strategies?,” ECN, 29-Apr-2019. [Online]. Available: https://www.ecommerce-nation.com/best-ecommerce-security-strategies/. [Accessed: 18-Nov-2020]. 
+[10]   Elgamal, T., “User Authentication In E-Commerce,” Dark Reading, 29-Sep-2010. [Online]. Available: https://www.darkreading.com/risk/user-authentication-in-e-commerce/d/d-id/1134457. [Accessed: 28-Nov-2020]. 
+[11]   “ISO/IEC 27001 - Information security management,” ISO, 03-Apr-2020. [Online]. Available: https://www.iso.org/isoiec-27001-information-security.html. [Accessed: 30-Nov-2020]. 
+[12]   Kaushik, D., Gupta, A. & Gupta, S., 2020. E-Commerce Security Challenges: A Review. [ebook] International Conference on Innovative Computing and Communication (ICICC 2020). Available at: <https://ssrn.com/abstract=3595304> [Accessed 17 November 2020] 
+[13]   Kostler, S. “E-Commerce Wiki,” Authentication [E-Commerce Wiki], 2012. [Online]. Available: http://en.ecommercewiki.info/legal/authentication. [Accessed: 28-Nov-2020]. 
+[14] Kuruwitaarachchi, N., Abeygunawardena, P.K.W., Rupasingha, L. & Udara, S.W.I., 2019. A Systematic Review of Security in Electronic Commerce Threats and Frameworks. [ebook] Global Journals. Available at: <https://globaljournals.org/GJCST_Volume19/4-A-Systematic-Review-of-Security.pdf> [Accessed 16 November 2020]. 
+[15]   Muneer, A., Razzaq, S. & Farooq, Z., 2018. Data Privacy Issues and Possible Solutions in E-commerce. [PDF] Journal of Accounting & Marketing. 07. 10.4172/2168-9601.1000294. 
+[16]   “Official PCI Security Standards Council Site - Verify PCI Compliance, Download Data Security and Credit Card Security Standards,” PCI Security Standards Council®. [Online]. Available: https://www.pcisecuritystandards.org/pci_security/. [Accessed: 30-Nov-2020]. 
+[17]   Phillips, S., 2020. Ecommerce Security: Securing Against Cyber Threats (2020),” The BigCommerce Blog, 13-Jul-2020. [Online]. Available: https://www.bigcommerce.com/blog/ecommerce-website-security/. [Accessed: 18-Nov-2020]. 
+[18]   Singhal, A., 2020. Guide To Secure Web Services. [ebook] National Institute of Standards and Technology. Available at: <https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-95.pdf> [Accessed 18 November 2020]. 
+[19]   Turner, D., “Applying Cryptographic Security Services - a NIST summary,” Cryptomathic, Aug-2017. [Online]. Available: https://www.cryptomathic.com/news-events/blog/applying-cryptographic-security-services-a-nist-summary. [Accessed: 27-Nov-2020]. 
+[20]   Visa Checkout Merchant Docs, 19th ed. [PDF] Available at: <https://developer.visa.com/capabilities/visa_checkout/docs-how-to> Visa, 2019.  [Accessed: 1 Nov 2020]. 
+[21]   “What is GDPR, the EU's new data protection law?,” GDPR.eu, 13-Feb-2019. [Online]. Available: https://gdpr.eu/what-is-gdpr/. [Accessed: 30-Nov-2020]. 
+[22]   "What is SSL?", Cloudflare, 2020. [Online]. Available at: https://www.cloudflare.com/learning/ssl/what-is-ssl/. [Accessed: 01 Nov 2020]. 
+[23]   "Working with Visa APIs", Developer.visa.com, 2020. [Online]. Available at: https://developer.visa.com/pages/working-with-visa-apis. [Accessed: 15 Nov 2020]. 
+                </p>
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -188,41 +308,6 @@
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                   
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Bootstrap core JS-->
