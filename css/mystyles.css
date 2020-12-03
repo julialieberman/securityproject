@@ -5,3 +5,7 @@ img {
     max-width: 90%;
     margin: auto;
 }
+
+.subheader {
+    text-align: center;
+}

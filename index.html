@@ -82,7 +82,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Julia Lieberman, Lindsey Pesqueira, Brandon Yup</p>
+                <p class="masthead-subheading font-weight-light mb-0">Julia Lieberman, Lindsey Pesqueira, Brandon Yup</p><br>
                 <img alt="Visa Checkout" class="v-button" role="button"
                 src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
             </div>
@@ -131,26 +131,26 @@
                 </div>
             </div>
         </section>
-        <section class="page-section security-dimensions" id="currentstandards">
+        <section class="page-section bg-primary text-white mb-8 security-dimensions" id="currentstandards">
             <div class="container">
                 <!-- security techniques Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Current Standards and Compliances</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 text-white">Current Standards and Compliances</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
-                </div>
+                </div><br>
                 <div>
-                    <h4>Payment Card Industry Data Security Standard (PCI-DSS)</h4>
+                    <h4 class="subheader">Payment Card Industry Data Security Standard (PCI-DSS)</h4>
                     <p>
                         The PCI-DSS is an information security standard that protects organizations from security breaches and credit card theft, as well as educates vendors on implementing ecommerce security measures. The major credit card brands, such as Visa and Mastercard, enforce the regulations by including them in contracts with merchants and vendors. However, the Payment Card Industry Security Standards Council was formed from these major credit card brands to create the regulations. The PCI-DCI has several different standards for areas of ecommerce, like data collection, in order to implement security criteria for things such as strong access control or Point-to-point encryption [16]. PCI-DSS also stores a list of different payment applications that have been tested and approved by the Council, so that merchants and vendors can trust these applications.  
                     </p>
-                    <h4>International Organization for Standardization (ISO) </h4>
+                    <h4 class="subheader">International Organization for Standardization (ISO) </h4>
                     <p>
                         The International Organization for Standardization (ISO) scopes far beyond standardization for ecommerce. The ISO was created in 1947 as an organization to include representatives from different nation’s standardization organizations to provide worldwide proprietary, industrial and commercial standards [iso]. In 2013, a new standard for ecommerce was introduced to provide data security, ISO/IEC 27001:2013. This standard allows businesses to earn a certification confirming that the business has high quality management systems, data security, risk-aversion strategies, and standardized business practices [17]. 
                     </p>
-                    <h4>General Data Protection Regulation (GDPR) </h4>
+                    <h4 class="subheader">General Data Protection Regulation (GDPR) </h4>
                     <p>
                         In 2018, the General Data Protection Regulation was implemented, which is the European Union’s data protection law. Businesses will be fined heavily if they do not comply with these regulations that give consumers the right to data protection, including data security, privacy, and processing. This puts the responsibility of data protection on businesses to ensure each consumer’s rights are protected. This regulation has led to many businesses appointing a Data Protection Officer to be the liaison between the law and the company, stressing the importance of data protection. This regulation does not just pertain to the countries in the European Union (EU), this regulation is to protect citizens of the European Union. Thus, if a business is catering to or monitoring EU citizens, the business must be GDPR compliant [21]. 
                     </p>
@@ -173,18 +173,18 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <div>
-                    <h3>Security Techniques</h5>
-                    <h4>Secure Sockets Layer (SSL)</h4>
+                    <h3 class="subheader">Security Techniques</h3>
+                    <h4 class="subheader">Secure Sockets Layer (SSL)</h4>
                     <p>
                         SSL is what allows websites to go from HTTP to HTTPS. That extra ‘S’ means there is an SSL certificate on the website’s origin server. It is sometimes referred to as Transport Layer Security (TLS), because it is a transport-layer protocol that encrypts traffic over the internet and helps identify servers. It means that any data transferred between the web server and the browser is encrypted and confidential. SSL prevents attacks like domain spoofing. Any website that contains confidential information should have SSL, especially eCommerce websites.  
                         You get an SSL for your domain from a Certificate Authority (CA). The CA will digitally sign the certificate with their own private key. You can create a self-signed certificate if you do not want to pay a CA for one, by creating your own public-private key pairing, but these are not always recognized as secure [22]. Cloudflare is a company that provides free SSL certificates. 
                     </p>
-                    <h4>HMAC SHA-256</h4>
+                    <h4 class="subheader">HMAC SHA-256</h4>
                     <p>
                         Key Hash Message Authentication Code (HMAC) is based on Message Authentication Code(MAC), a method to send a message using a shared key in which the message and the shared key can be verified by the receiver. However, MAC is vulnerable to attacks, such as brute force, because the attacker will be able to read or modify the message if they can determine the key. HMAC can be obtained by running a cryptographic hash function. In our implementation, we ran SHA-256 on our data and used a shared secret key to generate the hashes. When using HMAC, during a file transfer, both the file and the shared secret are hashed, so the receiver can verify both the authenticity of the sender and the integrity of the data. The hashed file ensures integrity, while the hashed shared secret ensures authenticity [5]. HMAC is similar to digital signatures, as they both ensure integrity and authenticity. However, HMAC uses symmetric keys whereas digital signatures use asymmetric keys [14]. Nonetheless, digital signatures are used in addition to HMACs to secure a website. 
                         In secure file transfer protocols, such as HTTPS, HMAC can ensure data integrity and message authentication. HMAC is considered the best mechanism for using cryptographic hash functions and is promoted as such by the Federal Information Processing Standards. Encryption and digital signatures ensure confidentiality, integrity, and non-repudiation (can verify signature using the sender’s public key) [5]. 
                     </p>
-                    <h5>AES 256 CBC</h5>
+                    <h4 class="subheader">AES 256 CBC</h4>
                     <p>
                         AES was invented in 1976 and adopted by the federal government and is the industry standard for encryption and data security. It comes in 128-, 192-, and 256-bit implementations but 128 bit remains safe, is has no known flaws, it’s computational load is low, and it would likely take billions of years to brute force an AES key. CBC is one of the more common modes, and is used on fixed length bit groups, called blocks. This also requires the use of an initialization vector (IV) for each operation done to a given block. The IV is similar to a salt, in that it is unique in each instance and thus the two separate encryptions on the same data would yield different results [3].  
                     </p>
@@ -217,18 +217,18 @@
 Since we were building this for educational purposes, we used the free sandbox environment, meaning this would not be extensible for a real payment processing solution. Documentation indicates the sandbox environment allows for a full simulation, and we used this to demonstrate the capabilities and security strategies used in online checkout [19]. 
 </p>
 
-<h5>Step I</h5>
+<h4 class="subheader">Step I</h4>
 <p>
 We set up a basic website hosted on GitHub pages, creating our server in Node.js. Following the Visa Checkout Merchant Documentation [19], we created a Visa Developer account and created a sandbox project. We acquired API and encryption keys as well as shared secrets for symmetric encryption.  
 Various node package modules were used to make the website functional, most notably crypto, which provides a set of functions for cryptographic encryption. After setting up the website, we integrated the code for the Visa Checkout button which, when clicked, will open a lightbox where the user can login to their Visa account, add and select credit cards, and make a payment. The code was provided by Visa Checkout Getting Started [19], which we completed with our various keys and shared secrets. We tested the button functionality using dummy credit card values provided by Visa. If the payment is successful, the request finishes, triggering a payment.success event which returns an encrypted payload and a temporary call ID to be used to access the API. We were successful in testing this in both Safari and Chrome. 
 </p>
-<h5>Step II</h5>
+<h4 class="subheader">Step II</h4>
 <p>
 After the user finishes their payment journey, the backend needs to obtain and decrypt the payload. There are two ways to do this. If the credit card type returns a token upon the payment.success event, the payload is already present, and it just needs to be decrypted. Most cards however, just return a call ID which will then be used to access the Get Payment Data API to obtain the encrypted payload. We attempted both methods. 
 Note that all the Visa Checkout APIs require either two-way SSL or x-pay-token authentication.  
 For interacting with the Get Payment Data API, an x-pay-token is required. This is an API key-shared secret authentication. The token is placed in the header of the API request and will be used to identify and authenticate the client sending the request. The encryption key is used to encrypt and decrypt a payload as well as in the creation of the x-pay-token.  
 </p>
-<h6>Step II: Method I.  </h6>
+<h5 class="subheader">Step II: Method I.  </h5>
 <p>
 We adapted the sample decryption code provided by Visa [19]. Some of their module methods have been deprecated but were easy to update (i.e., creation of buffers). The decryption required first base-64-decoding the encrypted key, and then parsing the result for the HMAC and Initialization Vector (IV) for the decryption algorithm. Then, the remaining data would be decrypted using AES-256-CBC, the IV, and the hashed shared secret. To do this, we first created our own HMAC using the shared key, updating with the IV and data (the message), and doing a default digest. If the resulting value matched the HMAC from the response payload, then the HMAC would be successfully validated. At this point, we must create a decipher object based on the algorithm key, and IV, and finally decrypt the data.  
 These steps must be done two separate times to unwrap various keys and secrets in order to fully decrypt the customer payment data [19]. The recursive decryption provides an extra layer of protection for the customer’s sensitive data and does not drastically increase the computational load. Unfortunately, the provided decryption algorithm yielded uninterpretable data. For example, this was the decrypted data after undergoing the first round of decryption:  
@@ -239,8 +239,8 @@ The expected result is a JSON object containing the customer payment data. We re
             We would not be successful in continuing this implementation without paying for an eCommerce partner, so we opted to try method two instead. 
         </p>
 
-        <h6>Step II: Method II.  
-        </h6>
+        <h5 class="subheader">Step II: Method II.  
+        </h5>
        <p> In order to call the Get Payment Data API, we needed to encrypt and send the shared secret in the request header. We implemented the Node.js code to calculate the hash and create an ‘x-pay-token' header for the API calls [1]. This is a sample header: 
  
 GET /payment/data/{callId}?apiKey=KSKDFJOP934ALSFDJP34 HTTP/1.0 
@@ -255,12 +255,12 @@ Generating an x-pay-token requires a few simple but easily mistakable steps:
   
 We were able to verify that our hashing algorithm was functional using a Visa sample, however the API itself is unresponsive. Not only did our requests return invalid errors, the test request on their website also returns a 404 not found error [1]. We have notified the Visa Developer Center. 
 </p>
-<h5>Conclusion</h5>  
+<h4 class="subheader">Conclusion</h4>  
 <p>Given the failure of both methods for obtaining and decryption the customer payment data, we were blocked and thus were unable to continue forwards with our implementation.  
 We struggled to use their service the entire time. We were forced to reset our login password multiple times, could only login to the Visa Developer Center from a private browser session, and we were unable to access the website randomly due to their server going down, among many other issues. Nonetheless, we learned Implementation the process of implementing secure eCommerce websites and the various steps involved. We saw firsthand how the hashing algorithms are changed by tiny string modifications (the avalanche effect) and gained appreciation for both symmetric and asymmetric encryption.  
 </p>
-<h5>Future steps  
-</h5>
+<h4 class="subheader">Future steps  
+</h4>
 <p>Going forwards, before diving into one solution we would do more research on the various existing solutions, looking at their reviews and rankings. Visa Checkout was not the best option. Stripe, Shopify, and WooCommerce are three other options to consider. Shopify provides a full eCommerce platform and utilizes Stripe services, whereas Stripe provides a payment solution that you can build on top of or integrate into your own website. Visa Checkout is unstable and unsupported, and we do not recommend it as an eCommerce solution. 
                     </p></div>
                 </div>
