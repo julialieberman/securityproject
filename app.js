@@ -75,10 +75,9 @@ app.post('/encrypteddata', function(req, res){
     var encKey=req.body.encKey;
     //encrypted consumer and payment data. decrypt by unwrapping encKey, then using that value to decrypt this
     var encPayment=req.body.encPaymentData;
-    // console.log(encKey);
-    // console.log(encPayment);
-    //decrypt(req, res, sharedSecret, encKey, encPayment);
-    getAPIPaymentData(req, res);
+
+    //decrypt(req, res, sharedSecret, encKey, encPayment); //use this to decrypt data
+    getAPIPaymentData(req, res); //use this to access the get payment data API
 })
 
 /** on page error */

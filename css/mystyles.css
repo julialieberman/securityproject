@@ -9,3 +9,7 @@ img {
 .subheader {
     text-align: center;
 }
+
+.centermytext{
+    white-space: unset;
+}

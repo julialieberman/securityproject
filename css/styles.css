@@ -4153,7 +4153,7 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1492px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -9999,7 +9999,7 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
